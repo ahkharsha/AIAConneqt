@@ -5,7 +5,7 @@ import axios from "axios";
 import socialMediaDapp from "./SocialMediaDapp.json";
 
 export const CONTRACT_ABI = socialMediaDapp.abi;
-export const CONTRACT_ADDRESS = "0xF859e215A276EC632Fb46DCca4EbccF99C8993D2";
+export const CONTRACT_ADDRESS = "0x73641118e93Be1Ed8cE170E17E564Fa76b43a8fb";
 
 // PINATA KEYS from .env
 export const PINATA_API_KEY = process.env.NEXT_PUBLIC_PINATA_API_KEY;
@@ -23,6 +23,28 @@ const networks = {
     },
     rpcUrls: ["https://rpc-amoy.polygon.technology/"],
     blockExplorerUrls: ["https://www.oklink.com/amoy"],
+  },
+  aia_mainnet: {
+    chainId: `0x${Number(1319).toString(16)}`,
+    chainName: "AIA Mainnet",
+    nativeCurrency: {
+      name: "AIA",
+      symbol: "AIA",
+      decimals: 18,
+    },
+    rpcUrls: ["https://aia-dataseed1.aiachain.org"],
+    blockExplorerUrls: ["https://www.aiascan.com/"],t
+  },
+  aia_testnet: {
+    chainId: `0x${Number(1320).toString(16)}`,
+    chainName: "AIA Testnet",
+    nativeCurrency: {
+      name: "AIA",
+      symbol: "AIA",
+      decimals: 18,
+    },
+    rpcUrls: ["https://aia-dataseed1-testnet.aiachain.org/"],
+    blockExplorerUrls: ["https://testnet.aiascan.com/"],t
   },
   polygon_mumbai: {
     chainId: `0x${Number(80001).toString(16)}`,
@@ -142,7 +164,7 @@ const changeNetwork = async ({ networkName }) => {
 };
 
 export const handleNetworkSwitch = async () => {
-  const networkName = "neox_testnet";
+  const networkName = "aia_testnet";
   await changeNetwork({ networkName });
 };
 
