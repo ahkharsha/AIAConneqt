@@ -154,7 +154,7 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 For any inquiries or support, feel free to reach out:
 
 - **Email**: [ahkharsha@gmail.com](mailto:ahkharsha@gmail.com)
-- **LinkedIn**: [Harsha Kumar](https://www.linkedin.com/in/harsha-kumar-a-271a76203/)
+- **LinkedIn**: [A Harsha Kumar](https://www.linkedin.com/in/harsha-kumar-a-271a76203/)
 - **Project Website**: [AIAConneqt](https://aia-conneqt.vercel.app/)
 
 ---
