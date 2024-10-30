@@ -5,7 +5,7 @@ import axios from "axios";
 import socialMediaDapp from "./SocialMediaDapp.json";
 
 export const CONTRACT_ABI = socialMediaDapp.abi;
-export const CONTRACT_ADDRESS = "0x73641118e93Be1Ed8cE170E17E564Fa76b43a8fb";
+export const CONTRACT_ADDRESS = "0xF859e215A276EC632Fb46DCca4EbccF99C8993D2";
 
 // PINATA KEYS from .env
 export const PINATA_API_KEY = process.env.NEXT_PUBLIC_PINATA_API_KEY;
