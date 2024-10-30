@@ -1,8 +1,10 @@
 import { ethers } from "ethers";
 import Web3Modal from "web3modal";
 import axios from "axios";
-
+import dotenv from "dotenv";
 import socialMediaDapp from "./SocialMediaDapp.json";
+
+dotenv.config();
 
 export const CONTRACT_ABI = socialMediaDapp.abi;
 export const CONTRACT_ADDRESS = "0x73641118e93Be1Ed8cE170E17E564Fa76b43a8fb";
