@@ -30,42 +30,41 @@ const MainCreatePost = ({ setOpenCreatePost }) => {
           />
         </figure>
         <textarea
-          onClick={() => {
-            console.log("Textarea clicked");
-            setOpenCreatePost(true);
-          }}
+          onClick={() => setOpenCreatePost(true)}
           name="message"
           class="h100 bor-0 w-100 rounded-xxl p-2 ps-5 font-xssss text-grey-500 fw-500 border-light-md theme-dark-bg"
           cols="30"
           rows="10"
-          // placeholder="What's on your mind?"
-          placeholder="Creating post functionality is under development. Sorry for the inconvenience. Meanwhile, feel free to use the other features like Follow, Direct Messaging, Community Groups, Feeds etc."
+          placeholder="Click to create your post"
         ></textarea>
       </div>
       <div class="card-body d-flex p-0 mt-0">
         <a
           href="#"
+          onClick={() => setOpenCreatePost(true)}
           class="d-flex align-items-center font-xssss fw-600 ls-1 text-grey-700 text-dark pe-4"
         >
-          <i class="font-md text-danger  me-2">
+          <i class="font-md text-danger me-2">
             <AiOutlineVideoCameraAdd />
           </i>
           <span class="d-none-xs">Live Video</span>
         </a>
         <a
           href="#"
+          onClick={() => setOpenCreatePost(true)}
           class="d-flex align-items-center font-xssss fw-600 ls-1 text-grey-700 text-dark pe-4"
         >
-          <i class="font-md text-success  me-2">
+          <i class="font-md text-success me-2">
             <HiPhotograph />
           </i>
           <span class="d-none-xs">Photo/Video</span>
         </a>
         <a
           href="#"
+          onClick={() => setOpenCreatePost(true)}
           class="d-flex align-items-center font-xssss fw-600 ls-1 text-grey-700 text-dark pe-4"
         >
-          <i class="font-md text-warning  me-2">
+          <i class="font-md text-warning me-2">
             <AiOutlineCamera />
           </i>
           <span class="d-none-xs">Feeling/Activity</span>
