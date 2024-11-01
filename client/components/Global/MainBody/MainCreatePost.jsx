@@ -2,7 +2,7 @@ import React from "react";
 import {
   AiOutlineEdit,
   AiOutlineVideoCameraAdd,
-  AiOutlineCamera,
+  AiOutlineFileText,
 } from "react-icons/ai";
 import { HiPhotograph } from "react-icons/hi";
 import { BsThreeDots } from "react-icons/bs";
@@ -13,9 +13,9 @@ import { MainShareLink } from "./index";
 const MainCreatePost = ({ setOpenCreatePost }) => {
   return (
     <div class="card w-100 shadow-xss rounded-xxl border-0 ps-4 pt-4 pe-4 pb-3 mb-3">
-      <div class="card-body p-0">
-        <a class="font-xssss fw-600 text-grey-500 card-body p-0 d-flex align-items-center">
-          <i class="btn-round-sm font-xs text-primary  me-2 bg-greylight">
+      <div class="card-body p-2">
+        <a class="font-xsss fw-800 text-grey-600 card-body p-0 d-flex align-items-center">
+          <i class="btn-round-xl font-xl text-primary  me-2 bg-greylight">
             <AiOutlineEdit />
           </i>
           Create Post
@@ -38,38 +38,7 @@ const MainCreatePost = ({ setOpenCreatePost }) => {
           placeholder="Click to create your post"
         ></textarea>
       </div>
-      <div class="card-body d-flex p-0 mt-0">
-        <a
-          href="#"
-          onClick={() => setOpenCreatePost(true)}
-          class="d-flex align-items-center font-xssss fw-600 ls-1 text-grey-700 text-dark pe-4"
-        >
-          <i class="font-md text-danger me-2">
-            <AiOutlineVideoCameraAdd />
-          </i>
-          <span class="d-none-xs">Live Video</span>
-        </a>
-        <a
-          href="#"
-          onClick={() => setOpenCreatePost(true)}
-          class="d-flex align-items-center font-xssss fw-600 ls-1 text-grey-700 text-dark pe-4"
-        >
-          <i class="font-md text-success me-2">
-            <HiPhotograph />
-          </i>
-          <span class="d-none-xs">Photo/Video</span>
-        </a>
-        <a
-          href="#"
-          onClick={() => setOpenCreatePost(true)}
-          class="d-flex align-items-center font-xssss fw-600 ls-1 text-grey-700 text-dark pe-4"
-        >
-          <i class="font-md text-warning me-2">
-            <AiOutlineCamera />
-          </i>
-          <span class="d-none-xs">Feeling/Activity</span>
-        </a>
-      </div>
+      
     </div>
   );
 };
